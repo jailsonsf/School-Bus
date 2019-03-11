@@ -1,6 +1,2 @@
 # VS code
 .vscode/*
-
-# Java
-*.class
-.project

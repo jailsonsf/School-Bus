@@ -1,4 +1,0 @@
-DEBUG = True
-
-SQLALCHEMY_DATABASE_URI = 'sqlite:////storage.db'
-SQLALCHEMY_DATABASE_MODIFICATIONS = False

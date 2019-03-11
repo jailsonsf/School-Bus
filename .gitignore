@@ -1,9 +1,2 @@
-# Pipfile.lock
-Pipfile.lock
-
-# Python Byte-compiled
-__pycache__/*
-*.pyc
-
 # VS code
 .vscode/*

@@ -2,8 +2,7 @@
 Pipfile.lock
 
 # Python Byte-compiled
+__pycache__/*
 
-__pycache__/
-*.py[cod]
-*$py.class
-
+# VS code
+.vscode/*

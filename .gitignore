@@ -1,0 +1,9 @@
+# Pipfile.lock
+Pipfile.lock
+
+# Python Byte-compiled
+
+__pycache__/
+*.py[cod]
+*$py.class
+

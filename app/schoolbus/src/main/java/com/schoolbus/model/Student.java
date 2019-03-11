@@ -38,4 +38,17 @@ public class Student extends Person {
     public String getClassTime() {
         return classTime;
     }
+
+    @Override
+    public Integer getId() {
+
+        return id;
+    }
+
+    @Override
+    public String getName() {
+
+        return super.getName();
+        
+    }
 }

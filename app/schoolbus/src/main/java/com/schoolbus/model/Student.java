@@ -23,11 +23,11 @@ public class Student extends Person {
         setClassTime(classTime);
     }
 
-    private void setClassTime(String classTime) {
+    public void setClassTime(String classTime) {
         this.classTime = classTime;
     }
 
-    private void setCourse(String course) {
+    public void setCourse(String course) {
         this.course = course;
     }
 
@@ -43,6 +43,10 @@ public class Student extends Person {
     public Integer getId() {
 
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     @Override

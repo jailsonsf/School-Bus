@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Person {
+public class Attendant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,19 +18,40 @@ public class Person {
     private String rg;
     private String address;
 
-    public Person() {
-
+    public Attendant() {
     }
 
-    public Person(String name, int age, String cpf, String rg, String address) {
-
+    public Attendant(String name, int age, String cpf, String rg, String address) {
         super();
         setName(name);
         setAge(age);
         setCpf(cpf);
         setRg(rg);
         setAddress(address);
-        
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Integer getId() {
@@ -38,44 +59,23 @@ public class Person {
         return id;
     }
 
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setRg(String rg) {
-        this.rg = rg;
+    public String getAddress() {
+        return address;
     }
 
     public String getRg() {
         return rg;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public String getCpf() {
+        return cpf;
     }
 
-    public String getAddress() {
-        return address;
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
     }
 }

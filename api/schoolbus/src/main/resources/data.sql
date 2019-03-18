@@ -1,0 +1,1 @@
+insert into student(id, address, age, cpf, name, rg, class_time, course) values(1, 'Rua x', 20, '111', 'jailson', '123', 'tarde', 'computação')

@@ -1,0 +1,3 @@
+2019-03-18 09:50:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "STUDENT" not found; SQL statement:
+insert into student (id, address, age, class_time, course, cpf, name, rg) values (null, ?, ?, ?, ?, ?, ?, ?) [42102-197]

@@ -6,13 +6,14 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue("attendant")
 public class Attendant extends Person {
-
+    
     private String address;
 
     public Attendant() {
     }
 
-    public Attendant(String name, int age, String cpf, String rg, String address) {
+    public Attendant(String name, int age, String cpf, 
+        String rg, String address) {
         super(name, age, cpf, rg);
         setAddress(address);
     }

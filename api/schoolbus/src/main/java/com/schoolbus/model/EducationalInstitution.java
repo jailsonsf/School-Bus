@@ -24,6 +24,10 @@ public class EducationalInstitution {
 
     @JsonManagedReference
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "institution")
+    private List<Student> students;
+
+    @JsonManagedReference
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "institution")
     private List<Address> addresses;
 
     public EducationalInstitution() {

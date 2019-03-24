@@ -1,8 +1,8 @@
-insert into Person(id, user_type, age, cpf, name, rg, class_time, course) values(1, 'student', 20, '111', 'jailson', '123', 'tarde', 'computação')
+insert into educational_institution(id, name, cnpj) values(4, 'escola tu que sabe', '1234567')
+
+insert into Person(id, user_type, age, cpf, name, rg, class_time, course, institution_id) values(1, 'student', 20, '111', 'jailson', '123', 'tarde', 'computação', 4)
 insert into Person(id, user_type, age, cpf, name, rg) values (2, 'attendant', 28, '123', 'zequinha', '1234')
 insert into Person(id, user_type, age, cpf, name, rg, cnh) values(3, 'driver', 39, '1234', 'joaozinho', '12345', '123456')
-
-insert into educational_institution(id, name, cnpj) values(4, 'escola tu que sabe', '1234567')
 
 insert into address(id, name, district, number, institution_id) values(1, 'rua z', 'centro', 27, 4)
 

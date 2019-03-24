@@ -1,33 +1,36 @@
 package com.schoolbus.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 
 @Entity
 @DiscriminatorValue("student")
 public class Student extends Person {
 
-    private String address;
     private String course;
     private String classTime;
+
+    @JsonManagedReference
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "student")
+    private List<Address> addresses;
 
     public Student() {
     }
 
     public Student(String name, int age, String cpf, String rg, 
-        String address, String course, String classTime) {
+        Address addresses, String course, String classTime) {
         super(name, age, cpf, rg);
-        setAddress(address);
+        this.addresses = new ArrayList<Address>();
         setCourse(course);
         setClassTime(classTime);
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getAddress() {
-        return address;
     }
 
     public void setClassTime(String classTime) {
@@ -36,6 +39,14 @@ public class Student extends Person {
 
     public void setCourse(String course) {
         this.course = course;
+    }
+
+    public void setAddresses(List<Address> address) {
+        this.addresses = addresses;
+    }
+
+    public List<Address> getAddresses() {
+        return addresses;
     }
 
     public String getCourse() {

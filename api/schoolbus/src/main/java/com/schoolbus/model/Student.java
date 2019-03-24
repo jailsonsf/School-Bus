@@ -1,7 +1,6 @@
 package com.schoolbus.model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 public class Student extends Person {
 
     private String course;
-    private String classTime;
 
     @JsonManagedReference
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "student")
@@ -33,15 +31,10 @@ public class Student extends Person {
     }
 
     public Student(String name, int age, String cpf, String rg, 
-        Address addresses, String course, String classTime) {
+        Address addresses, String course) {
         super(name, age, cpf, rg);
         this.addresses = new ArrayList<Address>();
         setCourse(course);
-        setClassTime(classTime);
-    }
-
-    public void setClassTime(String classTime) {
-        this.classTime = classTime;
     }
 
     public void setCourse(String course) {
@@ -58,9 +51,5 @@ public class Student extends Person {
 
     public String getCourse() {
         return course;
-    }
-
-    public String getClassTime() {
-        return classTime;
     }
 }

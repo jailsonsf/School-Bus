@@ -1,3 +1,12 @@
 2019-03-18 09:50:13 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Table "STUDENT" not found; SQL statement:
 insert into student (id, address, age, class_time, course, cpf, name, rg) values (null, ?, ?, ?, ?, ?, ?, ?) [42102-197]
+2019-03-25 10:42:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DRIVER" not found; SQL statement:
+insert into driver(id, address, age, cpf, name, rg, cnh) values(3, 'Rua z', 39, '1234', 'joaozinho', '12345', '123456') [42102-197]
+2019-03-25 10:43:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DRIVER" not found; SQL statement:
+insert into driver(id, address, age, cpf, name, rg, cnh) values(3, 'Rua z', 39, '1234', 'joaozinho', '12345', '123456') [42102-197]
+2019-03-25 10:43:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DRIVER" not found; SQL statement:
+insert into driver(id, address, age, cpf, name, rg, cnh) values(3, 'Rua z', 39, '1234', 'joaozinho', '12345', '123456') [42102-197]

@@ -66,9 +66,9 @@ public class AttendantResources {
     @DeleteMapping("/attendants/{id}")
     public void deleteAttendant(@PathVariable int id) {
         
-        Optional<Attendant> studentFound = repository.findById(id);
+        Optional<Attendant> attendantFound = repository.findById(id);
 
-        if (studentFound.isPresent()) {
+        if (attendantFound.isPresent()) {
             repository.deleteById(id);
         }
     }

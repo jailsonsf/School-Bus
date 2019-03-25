@@ -10,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
@@ -23,6 +24,7 @@ public class Student extends Person {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "student")
     private List<Address> addresses;
 
+    @JsonBackReference
     @ManyToOne(optional = true)
     @JoinColumn(name = "institution_id")
     private EducationalInstitution institution;

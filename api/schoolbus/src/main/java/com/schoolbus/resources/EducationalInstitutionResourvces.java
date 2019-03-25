@@ -28,9 +28,9 @@ public class EducationalInstitutionResourvces {
     @GetMapping("/institutions")
     public List<EducationalInstitution> getAllInstitutions() {
         
-        List<EducationalInstitution> students = repository.findAll();
+        List<EducationalInstitution> institutions = repository.findAll();
 
-        return students;
+        return institutions;
     }
 
     @PostMapping("/institutions")

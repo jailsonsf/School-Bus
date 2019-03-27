@@ -8,6 +8,7 @@ import com.schoolbus.model.Driver;
 import com.schoolbus.repository.DriverRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +25,7 @@ public class DriverResources {
     @Autowired
     private DriverRepository repository;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/drivers")
     public List<Driver> getAllDrivers() {
         

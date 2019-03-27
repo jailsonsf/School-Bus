@@ -21,12 +21,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class EducationalInstitutionResourvces {
 
     @Autowired
     private EducationalInstitutionRepository repository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/institutions")
     public List<EducationalInstitution> getAllInstitutions() {
         

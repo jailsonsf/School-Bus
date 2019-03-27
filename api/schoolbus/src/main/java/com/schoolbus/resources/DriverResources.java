@@ -20,12 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class DriverResources {
 
     @Autowired
     private DriverRepository repository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/drivers")
     public List<Driver> getAllDrivers() {
         

@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 @Entity
 public class Address {
@@ -19,18 +21,22 @@ public class Address {
     private String district;
     private int number;
 
+    @JsonBackReference
     @ManyToOne(optional = true)
     @JoinColumn(name = "student_id")
     private Student student;
     
+    @JsonBackReference
     @ManyToOne(optional = true)
     @JoinColumn(name = "driver_id")
     private Driver driver;
 
+    @JsonBackReference
     @ManyToOne(optional = true)
     @JoinColumn(name = "attendant_id")
     private Attendant attendant;
 
+    @JsonBackReference
     @ManyToOne(optional = true)
     @JoinColumn(name = "institution_id")
     private EducationalInstitution institution;

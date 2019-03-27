@@ -9,6 +9,7 @@ import com.schoolbus.repository.AttendantRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +25,7 @@ public class AttendantResources {
     @Autowired
     private AttendantRepository repository;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/attendants")
     public List<Attendant> getAllAttendants() {
         
@@ -66,9 +68,9 @@ public class AttendantResources {
     @DeleteMapping("/attendants/{id}")
     public void deleteAttendant(@PathVariable int id) {
         
-        Optional<Attendant> studentFound = repository.findById(id);
+        Optional<Attendant> attendantFound = repository.findById(id);
 
-        if (studentFound.isPresent()) {
+        if (attendantFound.isPresent()) {
             repository.deleteById(id);
         }
     }

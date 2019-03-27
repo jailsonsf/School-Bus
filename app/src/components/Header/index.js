@@ -3,7 +3,7 @@ import React from 'react'
 import './styles.css'
 
 const Header = () => (
-    <header id="main-header">Hello World</header>
+    <header id="main-header">School Bus</header>
 )
 
 export default Header

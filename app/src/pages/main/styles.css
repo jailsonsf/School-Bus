@@ -12,6 +12,12 @@
     margin-bottom: 20px;
 }
 
+.entitys article strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .entitys article a {
     height: 42px;
     border-radius: 5px;

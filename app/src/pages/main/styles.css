@@ -1,0 +1,34 @@
+.entitys {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.entitys article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.entitys article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #40d486;
+    background: none;
+    margin-top: 10px;
+    color: #40d486;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.entitys article a:hover {
+    background: #40d486;
+    color: #fff;
+}

@@ -23,18 +23,8 @@ public class Address {
 
     @JsonBackReference
     @ManyToOne(optional = true)
-    @JoinColumn(name = "student_id")
-    private Student student;
-    
-    @JsonBackReference
-    @ManyToOne(optional = true)
-    @JoinColumn(name = "driver_id")
-    private Driver driver;
-
-    @JsonBackReference
-    @ManyToOne(optional = true)
-    @JoinColumn(name = "attendant_id")
-    private Attendant attendant;
+    @JoinColumn(name = "person_id")
+    private Person person;
 
     @JsonBackReference
     @ManyToOne(optional = true)

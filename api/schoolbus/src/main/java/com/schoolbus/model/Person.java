@@ -1,5 +1,9 @@
 package com.schoolbus.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
@@ -8,6 +12,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
 @Entity
@@ -19,6 +26,10 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @JsonManagedReference
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "person")
+    private List<Address> addresses;
+
     private String name;
     private int age;
     private String cpf;
@@ -27,8 +38,9 @@ public class Person {
     public Person() {    
     }
 
-    public Person(String name, int age, String cpf, String rg) {
+    public Person(String name, int age, String cpf, String rg, Address addresses) {
         super();
+        this.addresses = new ArrayList<Address>();
         setName(name);
         setAge(age);
         setCpf(cpf);
@@ -53,6 +65,15 @@ public class Person {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    
+    public void setAddresses(List<Address> address) {
+        this.addresses = addresses;
+    }
+
+    public List<Address> getAddresses() {
+        return addresses;
     }
 
     public String getRg() {

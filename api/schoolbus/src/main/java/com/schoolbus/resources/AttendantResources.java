@@ -20,12 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class AttendantResources {
     
     @Autowired
     private AttendantRepository repository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/attendants")
     public List<Attendant> getAllAttendants() {
         

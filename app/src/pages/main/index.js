@@ -22,13 +22,26 @@ export default class Main extends Component {
     render() {
         return (
             <div className="entitys">
-                {this.state.entitys.map(entity => (
-                    <article key={entity}>
-                        <strong>{entity}</strong>
+                <article>
+                    <strong>{this.state.entitys[0]}</strong>
 
-                        <Link to={`/entitys/${entity}`}>Acessar</Link>
-                    </article>
-                ))}
+                    <Link to={`/students`}>Acessar</Link>
+                </article>
+                <article>
+                    <strong>{this.state.entitys[1]}</strong>
+
+                    <Link to={`/institutions`}>Acessar</Link>
+                </article>
+                <article>
+                    <strong>{this.state.entitys[2]}</strong>
+
+                    <Link to={`/drivers`}>Acessar</Link>
+                </article>
+                <article>
+                    <strong>{this.state.entitys[3]}</strong>
+
+                    <Link to={`/attendants`}>Acessar</Link>
+                </article>
             </div>
         );
     }

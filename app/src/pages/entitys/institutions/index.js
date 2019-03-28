@@ -12,8 +12,6 @@ export default class Institutions extends Component {
         const response = await api.get(`/institutions`);
         
         this.setState({entitys: response.data});
-
-        console.log(this.state.entitys);
     }
 
     render() {

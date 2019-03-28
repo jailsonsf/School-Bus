@@ -4,13 +4,14 @@ import api from '../../../services/api';
 import './styles.css';
 
 export default class Attendants extends Component {
+    state = {
+        entitys: [],
+    }
 
     async componentDidMount() {
         const response = await api.get(`/attendants`);
         
         this.setState({entitys: response.data});
-
-        console.log(this.state.entitys);
     }
 
     render() {

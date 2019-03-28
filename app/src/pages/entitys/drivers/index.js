@@ -12,8 +12,6 @@ export default class Drivers extends Component {
         const response = await api.get(`/drivers`);
         
         this.setState({entitys: response.data});
-
-        console.log(this.state.entitys);
     }
 
     render() {

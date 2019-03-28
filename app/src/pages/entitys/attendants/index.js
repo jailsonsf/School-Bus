@@ -16,7 +16,14 @@ export default class Attendants extends Component {
     render() {
         return(
             <div className="entitys-info">
-                <h1>Attendants</h1>
+                {this.state.entitys.map(entity => (
+                    <article key={entity.id}>
+                        <strong>{entity.name}</strong>
+                        <p>{entity.cpf}</p>
+                        <p>{entity.age}</p>
+
+                    </article>
+                ))}
             </div>
         );
     }

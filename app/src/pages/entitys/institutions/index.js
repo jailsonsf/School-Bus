@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import api from '../../../services/api';
 
-import './styles.css';
+import '../styles.css';
 
 export default class Institutions extends Component {
     state = {
@@ -20,7 +20,8 @@ export default class Institutions extends Component {
                 {this.state.entitys.map(entity => (
                     <article key={entity.id}>
                         <strong>{entity.name}</strong>
-                        <p>{entity.cnpj}</p>
+                        <p>Id: {entity.id}</p>
+                        <p>CNPJ: {entity.cnpj}</p>
                     </article>
                 ))}
             </div>

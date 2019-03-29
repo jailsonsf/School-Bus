@@ -4,30 +4,30 @@ insert into educational_institution(id, name, cnpj) values(2, 'IFAL', '548451321
 insert into educational_institution(id, name, cnpj) values(3, 'UNEAL', '8495746488')
 
 -- Students
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(1, 'student', 20, '64386868862', 'Davi', '21877', 'Computação', 1)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(1, 'student', 18, '64386868862', 'Davi', '21877', 'Computação', 1)
 insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(2, 'student', 20, '25754376210', 'Miguel', '58339', 'Computação', 3)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(3, 'student', 20, '37755910510', 'Sophia', '42415', 'Computação', 1)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(4, 'student', 20, '10875105810', 'Alice', '84134', 'Biologia', 1)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(5, 'student', 20, '71071077429', 'Julia', '3853', 'Matemática', 2)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(6, 'student', 20, '55432826296', 'Manuela', '47463', 'Biologia', 3)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(3, 'student', 22, '37755910510', 'Sophia', '42415', 'Computação', 1)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(4, 'student', 19, '10875105810', 'Alice', '84134', 'Biologia', 1)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(5, 'student', 23, '71071077429', 'Julia', '3853', 'Matemática', 2)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(6, 'student', 17, '55432826296', 'Manuela', '47463', 'Biologia', 3)
 insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(7, 'student', 20, '19397542584', 'Bernardo', '13254', 'Biologia', 3)
 insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(8, 'student', 20, '68103378434', 'Matheus', '19622', 'Computação', 2)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(9, 'student', 20, '43101107179', 'Helena', '75773', 'Matemática', 2)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(10, 'student', 20, '68643109104', 'Beatriz', '88109', 'Computação', 3)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(11, 'student', 20, '83775495626', 'Guilherme', '37847', 'Matemática', 1)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(9, 'student', 18, '43101107179', 'Helena', '75773', 'Matemática', 2)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(10, 'student', 18, '68643109104', 'Beatriz', '88109', 'Computação', 3)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(11, 'student', 22, '83775495626', 'Guilherme', '37847', 'Matemática', 1)
 insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(12, 'student', 20, '11097845891', 'Samuel', '31019', 'Biologia', 1)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(13, 'student', 20, '46783103151', 'Vitor', '18796', 'Biologia', 2)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(14, 'student', 20, '54107655945', 'Lívia', '77582', 'Matemática', 2)
-insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(15, 'student', 20, '53643345646', 'Maria Clara', '14105', 'Matemática', 3)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(13, 'student', 21, '46783103151', 'Vitor', '18796', 'Biologia', 2)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(14, 'student', 23, '54107655945', 'Lívia', '77582', 'Matemática', 2)
+insert into Person(id, user_type, age, cpf, name, rg, course, institution_id) values(15, 'student', 18, '53643345646', 'Maria Clara', '14105', 'Matemática', 3)
 
 -- Attendants
 insert into Person(id, user_type, age, cpf, name, rg) values (16, 'attendant', 28, '14895234877', 'Julia', '78514')
-insert into Person(id, user_type, age, cpf, name, rg) values (17, 'attendant', 28, '64848517802', 'Isabella', '36598')
+insert into Person(id, user_type, age, cpf, name, rg) values (17, 'attendant', 26, '64848517802', 'Isabella', '36598')
 
 -- Drivers
 insert into Person(id, user_type, age, cpf, name, rg, cnh) values(18, 'driver', 39, '11047589328', 'Pedro', '89742', '9875613')
-insert into Person(id, user_type, age, cpf, name, rg, cnh) values(19, 'driver', 39, '20498523547', 'Arthur', '35287', '1871625')
-insert into Person(id, user_type, age, cpf, name, rg, cnh) values(20, 'driver', 39, '78514895214', 'Luiza', '98412', '3594417')
+insert into Person(id, user_type, age, cpf, name, rg, cnh) values(19, 'driver', 42, '20498523547', 'Arthur', '35287', '1871625')
+insert into Person(id, user_type, age, cpf, name, rg, cnh) values(20, 'driver', 37, '78514895214', 'Luiza', '98412', '3594417')
 
 -- Addresses of Institutions
 insert into address(id, name, district, number, institution_id) values(1, 'Rua z', 'centro', 33, 1)

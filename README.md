@@ -29,7 +29,9 @@ Projeto para auxiliar o acesso às informações sobre os envolvidos no transpor
 **Qual problema ele soluciona?**
     Tenta facilitar a maneira com a qual o usuário acessa as informações sobre aqueles que utilizam o transporte escolar e sobre aquelas que trabalham para manter o transporte em funcionamento
 
-![Main Page](./assets/MainPage.png)
+<p align="center">
+    <img src="./assets/MainPage.png" alt="Main Page"/>
+</p>
 
 
 # Tecnologias

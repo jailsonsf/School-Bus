@@ -60,7 +60,7 @@ Projeto para auxiliar o acesso às informações sobre os envolvidos no transpor
   ```
   * E em seguida:
   ``` shell
-    mvn package && java -jar target/gs-spring-boot-0.1.0.jar
+    mvn package && java -jar target/schoolbus-0.0.1-SNAPSHOT.jar
   ```
 
   Com a API rodando, agora precisamos prepara o [App](https://github.com/jailsonsf/School-Bus/tree/master/app)
